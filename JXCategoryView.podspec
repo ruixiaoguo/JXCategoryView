@@ -16,16 +16,19 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JXCategoryView"
-  s.version      = "0.0.2"
-  s.summary      = "A powerful and easy to use category view (segment view, segment control, page view, scroll viewcontroller) "
+  s.version      = "1.0"
+  s.summary      = "封装分段选择器"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description  = <<-DESC
+                   iOS 封装分段选择器封装库
+                   DESC
 
-  s.homepage     = "https://github.com/pujiaxin33/JXCategoryView"
+  s.homepage     = "https://github.com/ruixiaoguo/JXCategoryView.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -33,7 +36,7 @@ Pod::Spec.new do |s|
   #
   #  Licensing your code is important. See http://choosealicense.com for more info.
   #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 1.0'.
   #
 
   s.license      = "MIT"
@@ -50,10 +53,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "pujiaxin33" => "317437084@qq.com" }
-  # Or just: s.author    = "pjx"
-  # s.authors            = { "pjx" => "pujx@jingbo360.com" }
-  # s.social_media_url   = "http://twitter.com/pjx"
+  s.author             = { "ruixiaoguo" => "grx0917@sina.com" }
+  # Or just: s.author    = "ruixiaoguo"
+  # s.authors            = { "ruixiaoguo" => "grx0917@sina.com" }
+  # s.social_media_url   = "http://twitter.com/ruixiaoguo"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -61,8 +64,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+    s.platform     = :ios
+  # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -77,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/pujiaxin33/JXCategoryView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ruixiaoguo/JXCategoryView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,6 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "JXCategoryView/JXCategoryView/*.{h,m}"
+  s.exclude_files = ""
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -113,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+    s.framework  = "Foundation"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -126,7 +130,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
+  # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
